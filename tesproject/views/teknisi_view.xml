@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+
+<!-- tesproject_teknisi inherit tree view -->
+<record id="tesproject_teknisi_view_tree_inherit" model="ir.ui.view">
+    <field name="name">Daftar teknisi</field>
+    <field name="model">tesproject.teknisi</field>
+    <field name="mode">primary</field>
+    <field name="inherit_id" ref="tesproject_person_view_tree"/>
+    <field name="arch" type="xml">
+        <xpath expr="//field[@name='tgl_lahir']" position="after">
+            <field name="id_teknisi"/>
+        </xpath>
+    </field>
+</record>
+
+<!-- tesproject_teknisi_inherit form view -->
+<record id="tesproject_teknisi_view_form_inherit" model="ir.ui.view">
+    <field name="name">FORM TEKNISI</field>
+    <field name="model">tesproject.teknisi</field>
+    <field name="mode">primary</field>
+    <field name="inherit_id" ref="tesproject_person_view_form"/>
+    <field name="arch" type="xml">
+        <xpath expr="//form//sheet//group[2]" position="after">
+            <group name="id" string="ID">
+                <field name="id_teknisi"/>
+            </group>
+        </xpath>
+        <xpath expr="//field[@name='alamat']" position="attributes">
+            <attribute name="string">Address</attribute>
+        </xpath>
+    </field>
+</record>
+
+<!-- tesproject_teknisi action window -->
+<record id="tesproject_teknisi_action" model="ir.actions.act_window">
+    <field name="name">Teknisi</field>
+    <field name="type">ir.actions.act_window</field>
+    <field name="res_model">tesproject.teknisi</field>
+    <field name="view_mode">tree,form</field>
+</record>
+
+    <!-- tesproject_teknisi parent and an action -->
+    <menuitem id="tesproject_teknisi_menu_act" 
+              name="Teknisi" 
+              parent="tesproject_pegawai_menu_categ" 
+              action="tesproject_teknisi_action" 
+              sequence="20"/>
+</odoo>

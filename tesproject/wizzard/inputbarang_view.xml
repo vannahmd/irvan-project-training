@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+
+<!-- tesproject.inputbarang form view -->
+    <record id="inputbarang_view_form_wizzard" model="ir.ui.view">
+        <field name="name">Tambah Stok</field>
+        <field name="model">tesproject.inputbarang</field>
+        <field name="arch" type="xml">
+            <form string="Form Kedatangan Barang">
+                <group>
+                    <field name="barang_id"/>
+                    <field name="jumlah"/>
+                </group>
+                <footer>
+                    <button name="button_inputbarang" type="object" string="Input Barang" class="btn btn-warning"/>
+                    <button string="Cancel" special="cancel" class="btn btn-danger"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <record id="inputbarang_action_wizzard" model="ir.actions.act_window">
+        <field name="name">Tambah Stok</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">tesproject.inputbarang</field>
+        <field name="view_mode">form</field>
+        <field name="view_id" ref="inputbarang_view_form_wizzard"/>
+        <field name="target">new</field>
+    </record>
+
+    <menuitem
+        id="menu_inputbarang_action_wizzard"
+        name="Tambah Stok Barang"
+        parent="tesproject_barang_menu_categ"
+        action="inputbarang_action_wizzard"
+        sequence="30"/>
+
+</odoo>

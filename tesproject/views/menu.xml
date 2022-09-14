@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- This Menu Item will appear in the Upper bar, that's why It needs NO parent or action -->
+    <menuitem id="tesproject_menu_root" 
+              name="Zeto Komputer" 
+              sequence="10"/>
+
+    <!-- This Menu Item Must have a parent -->
+    <menuitem id="tesproject_barang_menu_categ" 
+              name="Barang" 
+              parent="tesproject_menu_root" 
+              sequence="10"/>
+
+    <!-- This Menu Item Must have a parent -->
+    <menuitem id="tesproject_pegawai_menu_categ" 
+              name="Pegawai" 
+              parent="tesproject_menu_root" 
+              sequence="20"/>
+
+    <!-- This Menu Item Must have a parent -->
+    <!-- <menuitem id="tesproject_service_menu_categ" 
+              name="Service" 
+              parent="tesproject_menu_root" 
+              sequence="40"/> -->
+
+    <!-- tesproject_transakasi Item Must have a parent -->
+    <menuitem id="tesproject_transakasi_menu_categ" 
+              name="Transaksi" 
+              parent="tesproject_menu_root" 
+              sequence="60"/>
+</odoo>

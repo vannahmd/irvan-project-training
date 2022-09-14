@@ -1,0 +1,11 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_tesproject_kelompokbarang,accsess.tesproject.kelompokbarang,model_tesproject_kelompokbarang,,1,1,1,1
+access_tesproject_barang,accsess.tesproject.barang,model_tesproject_barang,,1,1,1,1
+access_tesproject_person,accsess.tesproject.person,model_tesproject_person,,1,1,1,1
+access_tesproject_kasir,accsess.tesproject.kasir,model_tesproject_kasir,,1,1,1,1
+access_tesproject_teknisi,accsess.tesproject.teknisi,model_tesproject_teknisi,,1,1,1,1
+access_tesproject_supplier,accsess.tesproject.supplier,model_tesproject_supplier,,1,1,1,1
+access_tesproject_penjualan,accsess.tesproject.penjualan,model_tesproject_penjualan,,1,1,1,1
+access_tesproject_detailpenjualan,accsess.tesproject.detailpenjualan,model_tesproject_detailpenjualan,,1,1,1,1
+access_tesproject_pengajuan,accsess.tesproject.pengajuan,model_tesproject_pengajuan,,1,1,1,1
+access_tesproject_inputbarang,accsess.tesproject.inputbarang,model_tesproject_inputbarang,,1,1,1,1

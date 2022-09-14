@@ -1,0 +1,86 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+
+<!-- EXCELL PRINT     -->
+    <record id="report_barang_xlsx" model="ir.actions.report">
+        <field name="name">Daftar Barang Excell</field>
+        <field name="model">tesproject.barang</field>
+        <field name="report_type">xlsx</field>
+        <field name="report_name">tesproject.report_barang_xlsx</field>
+        <field name="report_file">tesproject.report_barang_xlsx</field>
+        <field name="binding_model_id" ref="model_tesproject_barang"/>
+        <field name="binding_type">report</field>
+    </record>
+    
+    <record id="report_kelompokbarang_xlsx" model="ir.actions.report">
+        <field name="name">Kategori Barang Excell</field>
+        <field name="model">tesproject.kelompokbarang</field>
+        <field name="report_type">xlsx</field>
+        <field name="report_name">tesproject.report_kelompokbarang_xlsx</field>
+        <field name="report_file">tesproject.report_kelompokbarang_xlsx</field>
+        <field name="binding_model_id" ref="model_tesproject_kelompokbarang"/>
+        <field name="binding_type">report</field>
+    </record>
+
+    <record id="report_kasir_xlsx" model="ir.actions.report">
+        <field name="name">Daftar Kasir Excell</field>
+        <field name="model">tesproject.kasir</field>
+        <field name="report_type">xlsx</field>
+        <field name="report_name">tesproject.report_kasir_xlsx</field>
+        <field name="report_file">tesproject.report_kasir_xlsx</field>
+        <field name="binding_model_id" ref="model_tesproject_kasir"/>
+        <field name="binding_type">report</field>
+    </record>
+
+    <record id="report_teknisi_xlsx" model="ir.actions.report">
+        <field name="name">Daftar Teknisi Excell</field>
+        <field name="model">tesproject.teknisi</field>
+        <field name="report_type">xlsx</field>
+        <field name="report_name">tesproject.report_teknisi_xlsx</field>
+        <field name="report_file">tesproject.report_teknisi_xlsx</field>
+        <field name="binding_model_id" ref="model_tesproject_teknisi"/>
+        <field name="binding_type">report</field>
+    </record>
+
+    <record id="report_pengajuan_xlsx" model="ir.actions.report">
+        <field name="name">Pengajuan Excell</field>
+        <field name="model">tesproject.pengajuan</field>
+        <field name="report_type">xlsx</field>
+        <field name="report_name">tesproject.report_pengajuan_xlsx</field>
+        <field name="report_file">tesproject.report_pengajuan_xlsx</field>
+        <field name="binding_model_id" ref="model_tesproject_pengajuan"/>
+        <field name="binding_type">report</field>
+    </record>
+
+    <record id="report_supplier_xlsx" model="ir.actions.report">
+        <field name="name">Supplier Excell</field>
+        <field name="model">tesproject.supplier</field>
+        <field name="report_type">xlsx</field>
+        <field name="report_name">tesproject.report_supplier_xlsx</field>
+        <field name="report_file">tesproject.report_supplier_xlsx</field>
+        <field name="binding_model_id" ref="model_tesproject_supplier"/>
+        <field name="binding_type">report</field>
+    </record>
+
+    <record id="report_penjualan_xlsx" model="ir.actions.report">
+        <field name="name">Penjualan Excell</field>
+        <field name="model">tesproject.penjualan</field>
+        <field name="report_type">xlsx</field>
+        <field name="report_name">tesproject.report_penjualan_xlsx</field>
+        <field name="report_file">tesproject.report_penjualan_xlsx</field>
+        <field name="binding_model_id" ref="model_tesproject_penjualan"/>
+        <field name="binding_type">report</field>
+    </record>
+
+<!-- PDF PRINT -->
+    <record id="report_penjualan_pdf" model="ir.actions.report">
+        <field name="name">Print Faktur Penjualan</field>
+        <field name="model">tesproject.penjualan</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">tesproject.report_penjualan_pdf</field>
+        <field name="report_file">tesproject.report_penjualan_pdf</field>
+        <field name="binding_model_id" ref="model_tesproject_penjualan"/>
+        <field name="binding_type">report</field>
+    </record>
+
+</odoo>
